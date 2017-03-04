@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_PANORAMA_VIEW_DEFAULT_TITLE" option="COM_PANORAMA_VIEW_DEFAULT_OPTION">
+		<help
+			key = "JHELP_MENUS_MENU_ITEM_CONTACT_SINGLE_CONTACT"
+		/>
+		<message>
+			<![CDATA[COM_PANORAMA_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request" label="COM_PANORAMA_BASIC_OPTION_FIELDSET_LABEL">
+			<field type="sql" name="title" label="COM_PANORAMA_QUERY_LABEL" description="COM_PANORAMA_QUERY_DESC" query="SELECT id AS value, title FROM #__panoramas"></field>
+			<field type="hidden" name="controller" default="panoramas" ></field>
+		</fieldset>
+	</fields>
+	
+</metadata>

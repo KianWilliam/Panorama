@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="component" version="3.x" method="upgrade">
+<identifier>com:panorama</identifier>
+<name>panorama</name>
+<creationDate>August 2016</creationDate>
+<author>Kian William Nowrouzian</author>
+<copyright>Copyright (C) 2016 </copyright>
+<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+<authorEmail>mezmer121@gmail.com</authorEmail>
+<authorUrl>http://www.myextenstions.lord121.ir</authorUrl>
+<version>1.0.0</version>	
+<description><![CDATA[<div style="color:#fff; background-color:#f015d9; padding:5px;">Welcome to Panorama, study readme.txt file before going forward.</div>]]></description>
+   <install>
+		<sql>
+            <file charset="utf8" driver="mysql">sql/install.sql</file>
+        </sql>
+   </install>
+   <uninstall>
+		<sql>
+            <file charset="utf8" driver="mysql">sql/uninstall.sql</file>
+        </sql>
+    </uninstall>
+	<updateservers>
+		<server type="extension" name="KianWilliam's extension updates" priority="1">http://www.myextenstions.lord121.ir/myextensions.xml</server>
+	</updateservers>
+    <languages folder="site">
+		<language tag="en-GB">language/en-GB/en-GB.com_panorama.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.com_panorama.sys.ini</language>
+    </languages>
+    <media destination="com_panorama" folder="media">
+		<filename>index.html</filename>
+		<filename>icon-16-panorama.png</filename>
+		<folder>cache</folder>		
+	</media>
+	<files folder="site">
+		<filename>index.html</filename>		
+		<filename>panorama.php</filename>
+		<filename>router.php</filename>
+		<folder>views</folder>
+		<folder>models</folder>
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+	</files>
+	<administration>
+	<menu>Panorama</menu>
+	<submenu>
+		<menu  link="option=com_panorama&amp;controller=panoramas"  img="media/com_panorama/icon-16-panorama.png">COM_PANORAMA</menu>
+	</submenu>
+
+		<files folder="admin">
+		    <filename>panorama.xml</filename>
+        	<filename>panorama.php</filename>
+			<filename>index.html</filename>
+			
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+            <folder>models</folder>
+			<folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+		
+		<languages>
+		   <language tag="en-GB">language/en-GB/en-GB.com_panorama.ini</language>
+		    <language tag="en-GB">language/en-GB/en-GB.com_panorama.sys.ini</language>
+	    </languages>	
+
+	</administration>
+
+</extension>
