@@ -28,7 +28,7 @@ if($this->item->params->get('lib')==1)
 {
    $document->addScript(JURI::Base()."components/com_panorama/assets/js/jquery.js");
 }
-  $document->addScript(JURI::Base()."components/com_panorama3d/assets/js/pano.js");
+  $document->addScript(JURI::Base()."components/com_panorama/assets/js/pano.js");
   $noConflict = "var pa = jQuery.noConflict()";
   $document->addScriptDeclaration($noConflict);
   
