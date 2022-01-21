@@ -13,9 +13,9 @@ into controller instance and in controller class I contacted view and assigned c
 and other stuff in view instance and finally calling a method of view instance in controller class. 
 So it is not according to the routine of classical joomla component MVC.
 you may view the sample project at:
-http://www.extensions.lord121.ir/mycomponents/panorama-demo.html
+http://www.extensions.kwproductions121.com/mycomponents/panorama-demo.html
 and also downloading the complete package at:
-http://www.extensions.lord121.ir/mycomponents/panorama-download.html
+http://www.extensions.kwproductions121.com/mycomponents/panorama-download.html
 
 In case of any problem contact me at:
 mezmer121@gmail.com
